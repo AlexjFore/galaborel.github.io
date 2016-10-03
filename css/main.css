@@ -35,6 +35,7 @@ main {
 }
 
 footer {
+    align-items: center;
     display: flex;
     justify-content: flex-end;
     padding: 16px;
@@ -51,9 +52,31 @@ button {
         0 8px 10px 1px rgba(137, 77, 49, 0.14),
         0 3px 14px 2px rgba(137, 77, 49, 0.12),
         0 5px 5px -3px rgba(137, 77, 49, 0.4);
-    font-size: 18px;
+    color: #fff;
+    flex: 0 0 48px;
+    font-size: 22px;
     font-weight: bold;
     height: 48px;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3);
     width: 48px;
     -webkit-appearance: none;
+}
+
+.hp {
+    font-size: 24px;
+}
+
+.hp .fa-heart + .fa-heart,
+.hp .fa-heart + .fa-heart-o,
+.hp .fa-heart-o + .fa-heart-o {
+    margin-left: 6px;
+}
+
+.hp .fa-heart {
+    color: #ff5722;
+}
+
+.message {
+    margin: 0;
+    margin-right: 12px;
 }
