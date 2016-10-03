@@ -1,0 +1,24 @@
+{
+  "name": "galaborel",
+  "description": "A mobile web game experiment",
+  "main": "index.html",
+  "scripts": {
+    "test": "stylelint **/*.css && ./node_modules/.bin/eslint js/*.js"
+  },
+  "devDependencies": {
+    "eslint": "^3.3.1",
+    "eslint-config-jquery": "^1.0.0",
+    "eslint-config-standard": "^6.1.0",
+    "eslint-plugin-standard": "^2.0.1",
+    "stylelint": "^7.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Galaborel/galaborel.github.io.git"
+  },
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/Galaborel/galaborel.github.io/issues"
+  },
+  "homepage": "https://galaborel.github.io"
+}
