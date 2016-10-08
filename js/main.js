@@ -2,7 +2,6 @@ $(function () {
     var hp = 3;
     var fighting = false;
     var next_icon = "<i class='fa fa-arrow-right' aria-hidden='true'></i>";
-    var punch_icon = "<i class='fa fa-hand-rock-o' aria-hidden='true'></i>";
 
     $(".message").html ("You encountered a <b>SLIME</b>!");
     $(".primary-button").html (next_icon);
@@ -10,6 +9,16 @@ $(function () {
     display_hp (hp, 3);
 
     $(".primary-button").click (function() {
+        if (!fighting) {
+            if (hp > 0) {
+                $(".message").html ("Punch it because reasons!");
+                $(".primary-button").hide ();
+                fighting = true;
+            }
+        }
+    });
+
+    $(".mob").click (function() {
         if (fighting == true) {
             hp--;
             $(".mob").toggleClass ("hit");
@@ -21,13 +30,6 @@ $(function () {
             if (hp <= 0) {
                 $(".message").html ("You win!");
                 fighting = false;
-                $(".primary-button").html ("<i class='fa fa-thumbs-o-up' aria-hidden='true'></i>");
-            }
-        } else {
-            if (hp > 0) {
-                $(".message").html ("Punch it because reasons!");
-                $(".primary-button").html (punch_icon);
-                fighting = true;
             }
         }
     });
