@@ -44,7 +44,6 @@ footer {
 }
 
 button {
-    justify-content: center;
     background-image: linear-gradient(to bottom, #00bcd4, #03a9f4);
     border: 1px solid #2196f3;
     border-radius: 50%;
