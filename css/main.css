@@ -32,6 +32,8 @@ html {
 }
 
 main {
+    align-items: center;
+    display: flex;
     flex: 1;
     padding: 16px;
 }
@@ -80,6 +82,7 @@ button:focus {
 }
 
 .hp {
+    align-self: flex-start;
     font-size: 24px;
     text-shadow: 0 2px rgba(0, 0, 0, 0.1);
 }
@@ -101,4 +104,18 @@ button:focus {
 .message {
     margin: 0;
     margin-right: 12px;
+}
+
+.mob {
+    background-image: url(../images/mobs/slime.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: block;
+    width: 128px;
+    height: 128px;
+}
+
+.mob.hit {
+    filter: hue-rotate(270deg);
+    transform: translateY(-10px);
 }

@@ -4,7 +4,7 @@ $(function () {
     var next_icon = "<i class='fa fa-arrow-right' aria-hidden='true'></i>";
     var punch_icon = "<i class='fa fa-hand-rock-o' aria-hidden='true'></i>";
 
-    $(".message").html ("You encounter a wild TREE!");
+    $(".message").html ("You encountered a <b>SLIME</b>!");
     $(".primary-button").html (next_icon);
 
     display_hp (hp, 3);
@@ -12,7 +12,11 @@ $(function () {
     $(".primary-button").click (function() {
         if (fighting == true) {
             hp--;
+            $(".mob").toggleClass ("hit");
             display_hp (hp, 3);
+            setTimeout(function(){
+                $(".mob").toggleClass ("hit");
+            }, 100);
 
             if (hp <= 0) {
                 $(".message").html ("You win!");
@@ -21,7 +25,7 @@ $(function () {
             }
         } else {
             if (hp > 0) {
-                $(".message").html ("Punch it for no reason!");
+                $(".message").html ("Punch it because reasons!");
                 $(".primary-button").html (punch_icon);
                 fighting = true;
             }
