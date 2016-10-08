@@ -44,7 +44,7 @@ footer {
 }
 
 button {
-    align-items: center;
+    justify-content: center;
     background-image: linear-gradient(to bottom, #00bcd4, #03a9f4);
     border: 1px solid #2196f3;
     border-radius: 50%;
@@ -60,7 +60,6 @@ button {
     font-size: 22px;
     font-weight: bold;
     height: 48px;
-    text-align: center;
     text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
     width: 48px;
     -webkit-appearance: none;
